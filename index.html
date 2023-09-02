@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portflio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .sidebar {
+            position: absolute;
+            background-color: rgb(194, 191, 191);
+            font-family: 'Raleway', sans-serif;
+            height: 100vh;
+            transition: transform o.3s ease-in;
+        }
+
+        .sidebar nav {
+            padding: 45px;
+        }
+
+        .sidebar nav li {
+            list-style-type: none;
+            font-size: 25px;
+            padding: 33px 0;
+        }
+
+        .sidebar nav li a {
+            text-decoration: none;
+            color: rgb(27, 26, 26);
+
+        }
+
+        .main {
+            width: 90vw;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .info {
+            height: 60vh;
+            width: 80vw;
+            margin: 144px auto;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .devinfo {
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+
+        .hello {
+            font-size: 3em;
+        }
+
+        .name {
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .aboutkishan {
+            font-size: 30px;
+        }
+
+        .aboutmore {
+            font-size: 26px;
+            font-family: 'Baloo Bhai', cursive;
+            margin: 3px;
+        }
+
+        .btn-button {
+            margin-top: 34px;
+        }
+
+        .btn-button button {
+            padding: 9px 14px;
+            border-radius: 22px;
+            color: white;
+            background-color: dodgerblue;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0 3px;
+            cursor: pointer;
+        }
+
+        .btn-button button:hover {
+            background-color: white;
+            color: dodgerblue;
+        }
+
+        .devpic img {
+
+            height: 60vh;
+        }
+
+        .contactform {
+            font-family: 'Baloo Bhai', cursive;
+            padding-left: 40px;
+            margin: 88px 88px;
+
+        }
+
+        .contactform form {
+            margin: 0 40px;
+        }
+
+        .contactform h1 {
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+
+        .contactform form div {
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contactform form div input {
+
+            border-radius: 5px;
+            margin: 6px 0 0 0;
+            padding: 3px;
+        }
+
+        #emailHelp {
+            font-size: 11px;
+            color: midnightblue;
+            margin: 0 5px;
+            padding: 3px 0 0 0;
+        }
+
+        #form-check {
+            flex-direction: row;
+        }
+
+        #form-check input {
+            width: 24px;
+            margin: 3px 0;
+        }
+
+        .blogcontainer {
+            margin: 88px 88px;
+        }
+
+        .blogitems {
+            margin: 20px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        h1 {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 23px;
+        }
+
+        p {
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .introme {
+            margin: 88px 88px;
+        }
+
+        .introme h2 {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 12px;
+        }
+
+        .introme p {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 12px;
+        }
+
+        .myskillcontainer {
+            padding: 12px;
+
+        }
+
+        .skillitems {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .skill {
+            width: 265px;
+            height: 6px;
+            background-color: red;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebarGo {
+            transform: translate(-443px, 0px);
+            position: absolute;
+        }
+
+        .hamburger {
+            position: absolute;
+            cursor: pointer;
+
+        }
+
+        .cross {
+            margin-left: 128px;
+        }
+
+        @media (max-width: 1250px) {
+
+            .devpic {
+                display: none;
+            }
+
+            .intro,
+            .blogcontainer,
+            .contactform {
+                margin: 50px 8px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="intro.html">My Intro</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="hamburg.png" alt="hamburgermenueimg" width="45px">
+                <img class="cross" src="cross.jpg" alt="hamburgermenueimg" width="30px">
+            </div>
+            <div class="info">
+                <div class="devinfo">
+                    <div class="hello">Hi I am </div>
+                    <div class="name">SOMEONE UNKNOWN</div>
+                    <div class="aboutkishan">Engineer,Developer,Programmer</div>
+                    <div class="aboutmore">I am a devloper and i love to develop new web pages.<br> I live in India,
+                        like to
+                        help new Buddies.<br> I am proficient in web development skills like HTML, CSS, JavaScript,
+                        Node.js, React.js <br>I also have skills in C, C++, Java language </div>
+                    <div class="btn-button">
+                        <button><a href="cv.html">Download CV</a></button>
+                        <button><a href="contact.html">Contact Me</a></button>
+                    </div>
+                </div>
+                <div class="devpic"><img src="dev.png" alt="someone"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.cross').style.display = 'none';
+        document.querySelector('.hamburger').addEventListener("click", () => {
+            document.querySelector('.sidebar').classList.toggle('sidebarGo')
+            if (document.querySelector('.sidebar').classList.contains('sidebarGo')) {
+                document.querySelector('.ham').style.display = 'inline'
+                document.querySelector('.cross').style.display = 'none'
+            }
+            else {
+                document.querySelector('.ham').style.display = 'none'
+                setTimeout(() => {
+                    document.querySelector('.cross').style.display = 'inline'
+                }, 50);
+            }
+        })
+    </script>
+</body>
+
+</html>
